@@ -53,6 +53,7 @@ public:
         cout << "회사: " << company << endl;
         cout << "전화번호: " << phoneNumber << endl;
         cout << "직급: "; COMP_POS::ShowRank(rank);
+        cout << endl;
     }
 
     ~NameCard()
