@@ -32,9 +32,8 @@ private:
     int rad;
 
 public:
-    Circle(int x, int y, int _rad, Point center)
-    : center(Point(x,y)), rad(_rad)
-    {}
+    Circle(Point _center, int _rad)
+    : center(_center), rad(_rad) {}
 
     void ShowCircleInfo() const
     {
@@ -50,6 +49,8 @@ private:
     Circle outterCircle;
 
 public:
+    Ring(int innerX, int innerY, int innerRad, int outterX, int outterY, int outterRad)
+    : innerCircle(Point(innerX, innerY), innerRad), outterCircle(Point(outterX, outterY), outterRad) {}
 
     void ShowRingInfo()
     {
@@ -60,9 +61,8 @@ public:
     }
 };
 
-//int main()
-//{
-//    Ring ring;
-//    ring.Init(1, 1, 4, 2, 2, 9);
-//    ring.ShowRingInfo();
-//}
+int main()
+{
+    Ring ring(1, 1, 4, 2, 2, 9);
+    ring.ShowRingInfo();
+}
