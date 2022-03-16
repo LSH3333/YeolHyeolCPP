@@ -1,5 +1,5 @@
 /*
- * ê¹Šì€ ë³µì‚¬ë¥¼ ì§„í–‰í•˜ëŠ” ë³µì‚¬ ìƒì„±ì ì¶”ê°€
+ * ±íÀº º¹»ç¸¦ ÁøÇàÇÏ´Â º¹»ç »ı¼ºÀÚ Ãß°¡
  */
 
 #include <iostream>
@@ -30,10 +30,10 @@ public:
         strcpy(cusName, _cusName);
     }
 
-    // ê¹Šì€ ë³µì‚¬ ì§„í–‰í•˜ëŠ” ë³µì‚¬ ìƒì„±ì
+    // ±íÀº º¹»ç ÁøÇàÇÏ´Â º¹»ç »ı¼ºÀÚ
     Account(const Account &copy) : accID(copy.accID), balance(copy.balance)
     {
-        // ìƒˆë¡­ê²Œ ë™ì  í• ë‹¹í•´ì„œ ê¹Šì€ ë³µì‚¬ ì§„í–‰
+        // »õ·Ó°Ô µ¿Àû ÇÒ´çÇØ¼­ ±íÀº º¹»ç ÁøÇà
         cusName = new char[strlen(copy.cusName) + 1];
         strcpy(cusName, copy.cusName);
     }
@@ -45,9 +45,9 @@ public:
 
     void ShowAccInfo()
     {
-        cout << "ê³„ì¢ŒID: " << accID << endl;
-        cout << "ì´ ë¦„: " << cusName << endl;
-        cout << "ì” ì•¡: " << balance << endl << endl;
+        cout << "°èÁÂID: " << accID << endl;
+        cout << "ÀÌ ¸§: " << cusName << endl;
+        cout << "ÀÜ ¾×: " << balance << endl << endl;
     }
 
     void DepositMoney(int amount)
@@ -71,7 +71,7 @@ public:
     }
 };
 
-// ë™ì ìœ¼ë¡œ í• ë‹¹
+// µ¿ÀûÀ¸·Î ÇÒ´ç
 Account * accounts[100];
 int accNum = 0;
 
@@ -91,7 +91,7 @@ int main()
             case INQUIRE:
                 PrintAllAccountsInfo(); break;
             case EXIT:
-                // í• ë‹¹ í•´ì œ
+                // ÇÒ´ç ÇØÁ¦
                 for(int i = 0; i < accNum; i++)
                     delete accounts[i];
                 return 0;
@@ -103,12 +103,12 @@ int main()
 int PrintMenu()
 {
     cout << "----- MENU -----" << endl;
-    cout << "1. ê³„ì¢Œê°œì„¤" << endl;
-    cout << "2. ì… ê¸ˆ" << endl;
-    cout << "3. ì¶œ ê¸ˆ" << endl;
-    cout << "4. ê³„ì¢Œì •ë³´ ì „ì²´ ì¶œë ¥" << endl;
-    cout << "5. í”„ë¡œê·¸ë¨ ì¢…ë£Œ" << endl;
-    cout << "ì„ íƒ: ";
+    cout << "1. °èÁÂ°³¼³" << endl;
+    cout << "2. ÀÔ ±İ" << endl;
+    cout << "3. Ãâ ±İ" << endl;
+    cout << "4. °èÁÂÁ¤º¸ ÀüÃ¼ Ãâ·Â" << endl;
+    cout << "5. ÇÁ·Î±×·¥ Á¾·á" << endl;
+    cout << "¼±ÅÃ: ";
     int chose; cin >> chose;
     cout << endl;
     return chose;
@@ -119,22 +119,22 @@ void MakeAccount()
     int accID, balance;
     char cusName[NAME_LEN];
 
-    cout << "[ê³„ì¢Œê°œì„¤]\n";
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
-    cout << "ì´ ë¦„: "; cin >> cusName;
-    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
+    cout << "[°èÁÂ°³¼³]\n";
+    cout << "°èÁÂID: "; cin >> accID;
+    cout << "ÀÌ ¸§: "; cin >> cusName;
+    cout << "ÀÔ±İ¾×: "; cin >> balance;
 
-    // ë™ì ìœ¼ë¡œ ê°ì²´ ìƒì„±
+    // µ¿ÀûÀ¸·Î °´Ã¼ »ı¼º
     accounts[accNum++] = new Account(accID, balance, cusName);
 }
 
 void Deposit()
 {
     int accID, balance;
-    cout << "[ì…   ê¸ˆ]" << endl;
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
-    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
-    cout << "ì…ê¸ˆì™„ë£Œ" << endl;
+    cout << "[ÀÔ   ±İ]" << endl;
+    cout << "°èÁÂID: "; cin >> accID;
+    cout << "ÀÔ±İ¾×: "; cin >> balance;
+    cout << "ÀÔ±İ¿Ï·á" << endl;
 
     for(int i = 0; i < accNum; i++)
     {
@@ -144,28 +144,28 @@ void Deposit()
             return;
         }
     }
-    cout << "ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ê³„ì¢ŒID ì…ë‹ˆë‹¤ " << endl;
+    cout << "Á¸ÀçÇÏÁö ¾Ê´Â °èÁÂID ÀÔ´Ï´Ù " << endl;
 }
 
 void WithDraw()
 {
     int accID, balance;
-    cout << "[ì¶œ   ê¸ˆ]" << endl;
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
-    cout << "ì¶œê¸ˆì•¡: "; cin >> balance;
-    cout << "ì¶œê¸ˆì™„ë£Œ" << endl;
+    cout << "[Ãâ   ±İ]" << endl;
+    cout << "°èÁÂID: "; cin >> accID;
+    cout << "Ãâ±İ¾×: "; cin >> balance;
+    cout << "Ãâ±İ¿Ï·á" << endl;
 
     for(int i = 0; i < accNum; i++)
     {
         if(accounts[i]->Get_accID() == accID)
         {
             if(accounts[i]->WithDrawMoney(balance) == -1)
-                cout << "ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤" << endl;
-            else cout << "ì¶œê¸ˆ ì™„ë£Œ" << endl;
+                cout << "ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù" << endl;
+            else cout << "Ãâ±İ ¿Ï·á" << endl;
             return;
         }
     }
-    cout << "ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ê³„ì¢ŒID ì…ë‹ˆë‹¤ " << endl;
+    cout << "Á¸ÀçÇÏÁö ¾Ê´Â °èÁÂID ÀÔ´Ï´Ù " << endl;
 }
 
 void PrintAllAccountsInfo()

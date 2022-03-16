@@ -6,40 +6,40 @@ using namespace std;
 
 struct Account
 {
-    int accID; // ê³„ì¢Œë²ˆí˜¸
-    int balance; // ì”ì•¡
-    string cusName; // ê³ ê° ì´ë¦„
+    int accID; // °èÁÂ¹øÈ£
+    int balance; // ÀÜ¾×
+    string cusName; // °í°´ ÀÌ¸§
 };
 
 vector<Account> accounts;
 
-// ë©”ë‰´ ì¶œë ¥
+// ¸Ş´º Ãâ·Â
 int PrintMenu()
 {
     cout << "----- MENU -----" << endl;
-    cout << "1. ê³„ì¢Œê°œì„¤" << endl;
-    cout << "2. ì… ê¸ˆ" << endl;
-    cout << "3. ì¶œ ê¸ˆ" << endl;
-    cout << "4. ê³„ì¢Œì •ë³´ ì „ì²´ ì¶œë ¥" << endl;
-    cout << "5. í”„ë¡œê·¸ë¨ ì¢…ë£Œ" << endl;
-    cout << "ì„ íƒ: ";
+    cout << "1. °èÁÂ°³¼³" << endl;
+    cout << "2. ÀÔ ±İ" << endl;
+    cout << "3. Ãâ ±İ" << endl;
+    cout << "4. °èÁÂÁ¤º¸ ÀüÃ¼ Ãâ·Â" << endl;
+    cout << "5. ÇÁ·Î±×·¥ Á¾·á" << endl;
+    cout << "¼±ÅÃ: ";
     int chose; cin >> chose;
     cout << endl;
     return chose;
 }
 
-// ê³„ì¢Œ ìƒì„±
+// °èÁÂ »ı¼º
 void MakeAccount()
 {
     int accID, balance;
     string cusName;
 
-    cout << "[ê³„ì¢Œê°œì„¤]\n";
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
+    cout << "[°èÁÂ°³¼³]\n";
+    cout << "°èÁÂID: "; cin >> accID;
 
-    cout << "ì´ ë¦„: "; cin >> cusName;
+    cout << "ÀÌ ¸§: "; cin >> cusName;
 
-    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
+    cout << "ÀÔ±İ¾×: "; cin >> balance;
 
     Account account;
     account.accID = accID;
@@ -48,14 +48,14 @@ void MakeAccount()
     accounts.push_back(account);
 }
 
-// ì…ê¸ˆ
+// ÀÔ±İ
 void Deposit()
 {
     int accID, balance;
-    cout << "[ì…   ê¸ˆ]" << endl;
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
-    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
-    cout << "ì…ê¸ˆì™„ë£Œ" << endl;
+    cout << "[ÀÔ   ±İ]" << endl;
+    cout << "°èÁÂID: "; cin >> accID;
+    cout << "ÀÔ±İ¾×: "; cin >> balance;
+    cout << "ÀÔ±İ¿Ï·á" << endl;
 
     for(auto &acc : accounts)
     {
@@ -67,14 +67,14 @@ void Deposit()
     }
 }
 
-// ì¶œê¸ˆ
+// Ãâ±İ
 void WithDraw()
 {
     int accID, balance;
-    cout << "[ì¶œ   ê¸ˆ]" << endl;
-    cout << "ê³„ì¢ŒID: "; cin >> accID;
-    cout << "ì¶œê¸ˆì•¡: "; cin >> balance;
-    cout << "ì¶œê¸ˆì™„ë£Œ" << endl;
+    cout << "[Ãâ   ±İ]" << endl;
+    cout << "°èÁÂID: "; cin >> accID;
+    cout << "Ãâ±İ¾×: "; cin >> balance;
+    cout << "Ãâ±İ¿Ï·á" << endl;
 
     for(auto &acc : accounts)
     {
@@ -86,14 +86,14 @@ void WithDraw()
     }
 }
 
-// ê³„ì¢Œ ì •ë³´ ì „ì²´ ì¶œë ¥
+// °èÁÂ Á¤º¸ ÀüÃ¼ Ãâ·Â
 void PrintAllAccountsInfo()
 {
     for(auto acc : accounts)
     {
-        cout << "ê³„ì¢ŒID: " << acc.accID << endl;
-        cout << "ì´ ë¦„: " << acc.cusName << endl;
-        cout << "ì” ì•¡: " << acc.balance << endl << endl;
+        cout << "°èÁÂID: " << acc.accID << endl;
+        cout << "ÀÌ ¸§: " << acc.cusName << endl;
+        cout << "ÀÜ ¾×: " << acc.balance << endl << endl;
     }
 }
 
