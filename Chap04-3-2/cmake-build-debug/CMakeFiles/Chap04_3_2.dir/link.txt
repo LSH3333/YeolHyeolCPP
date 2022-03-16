@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Chap04_3_2.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\Chap04_3_2.dir/objects.a @CMakeFiles\Chap04_3_2.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Chap04_3_2.dir/objects.a -Wl,--no-whole-archive -o Chap04_3_2.exe -Wl,--out-implib,libChap04_3_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Chap04_3_2.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Chap04_3_2.dir/main.cpp.o -o Chap04_3_2 

@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OOP1.dir/main.cpp.obj"
-  "OOP1.exe"
-  "OOP1.exe.manifest"
+  "CMakeFiles/OOP1.dir/BankingSystemVer01.cpp.o"
+  "CMakeFiles/OOP1.dir/BankingSystemVer01.cpp.o.d"
+  "OOP1"
   "OOP1.pdb"
-  "libOOP1.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
