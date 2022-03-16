@@ -1,6 +1,5 @@
 /*
- * Account 클래스 정의, 객체 포인터 배열 적용
- * 생성자, 소멸자 추가
+ * 깊은 복사를 진행하는 복사 생성자 추가
  */
 
 #include <iostream>
@@ -23,13 +22,20 @@ private:
     int balance;
     char * cusName;
 
-
 public:
     Account(int _accID, int _balance, char * _cusName)
-    : accID(_accID), balance(_balance)
+            : accID(_accID), balance(_balance)
     {
         cusName = new char[strlen(_cusName)+1];
         strcpy(cusName, _cusName);
+    }
+
+    // 깊은 복사 진행하는 복사 생성자
+    Account(const Account &copy) : accID(copy.accID), balance(copy.balance)
+    {
+        // 새롭게 동적 할당해서 깊은 복사 진행
+        cusName = new char[strlen(copy.cusName) + 1];
+        strcpy(cusName, copy.cusName);
     }
 
     int Get_accID()
