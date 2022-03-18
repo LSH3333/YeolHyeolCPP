@@ -44,9 +44,9 @@ public:
 
     void ShowCurrentGauge()
     {
-        cout << "ÀÜ¿© °¡¼Ö¸°: " << GetGasGauge() << endl;
-        cout << "ÀÜ¿© Àü±â·®: " << GetElecGauge() << endl;
-        cout << "ÀÜ¿© ¿öÅÍ·®: " << waterGauge << endl;
+        cout << "ìž”ì—¬ ê°€ì†”ë¦°: " << GetGasGauge() << endl;
+        cout << "ìž”ì—¬ ì „ê¸°ëŸ‰: " << GetElecGauge() << endl;
+        cout << "ìž”ì—¬ ì›Œí„°ëŸ‰: " << waterGauge << endl;
     }
 };
 
