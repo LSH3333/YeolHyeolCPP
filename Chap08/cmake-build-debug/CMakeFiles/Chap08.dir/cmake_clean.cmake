@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj"
+  "CMakeFiles/Chap08.dir/VirtualDestructor.cpp.obj"
   "Chap08.exe"
   "Chap08.exe.manifest"
   "Chap08.pdb"

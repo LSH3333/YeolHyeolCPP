@@ -4,7 +4,7 @@ using namespace std;
 
 namespace RISK_LEVEL
 {
-    enum {RISK_A, RISK_B, RISK_C};
+    enum {RISK_A=30, RISK_B=20, RISK_C=10};
 }
 
 // 순수 가상함수를 지닌 불완전한 클래스 = 추상 클래스 = 객체 생성이 불가능한 클래스
@@ -98,29 +98,27 @@ class ForeignSalesWorker : public SalesWorker
 {
 private:
     const int riskLevel;
+
 public:
     ForeignSalesWorker(string name, int money, double ratio, int risk)
     : SalesWorker(name, money, ratio), riskLevel(risk) {}
 
+    int GetRiskPay() const
+    {
+        return (int)(SalesWorker::GetPay() * (riskLevel/100.0));
+    }
+
     virtual int GetPay() const
     {
-        int SalesWorkerPay = SalesWorker::GetPay();
-        switch(riskLevel)
-        {
-            case RISK_LEVEL::RISK_A:
-                return SalesWorkerPay + (int)(SalesWorkerPay * 0.1);
-            case RISK_LEVEL::RISK_B:
-                return SalesWorkerPay + (int)(SalesWorkerPay * 0.2);
-            case RISK_LEVEL::RISK_C:
-                return SalesWorkerPay + (int)(SalesWorkerPay * 0.3);
-            default:
-                return 0;
-        }
+        return SalesWorker::GetPay() + GetRiskPay();
     }
+
     virtual void ShowSalaryInfo() const
     {
         ShowYourName();
-        cout << "salary: " << GetPay() << endl << endl;
+        cout << "salary: " << SalesWorker::GetPay() << endl;
+        cout << "risk pay: " << GetRiskPay() << endl;
+        cout << "sum: " << GetPay() << endl << endl;
     }
 };
 
@@ -180,4 +178,6 @@ int main()
     handler.AddEmployee(fseller3);
 
     handler.ShowAllSalaryInfo();
+
 }
+

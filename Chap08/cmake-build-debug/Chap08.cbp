@@ -85,6 +85,9 @@
 		<Unit filename="D:/Works/YeolHyeolCPP/Chap08/EmployeeManager.cpp">
 			<Option target="Chap08"/>
 		</Unit>
+		<Unit filename="D:/Works/YeolHyeolCPP/Chap08/VirtualDestructor.cpp">
+			<Option target="Chap08"/>
+		</Unit>
 		<Unit filename="D:/Works/YeolHyeolCPP/Chap08/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

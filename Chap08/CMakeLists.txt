@@ -3,4 +3,4 @@ project(Chap08)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Chap08 EmployeeManager.cpp)
+add_executable(Chap08 EmployeeManager.cpp VirtualDestructor.cpp)

@@ -152,6 +152,30 @@ EmployeeManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap08.dir\build.make CMakeFiles/Chap08.dir/EmployeeManager.cpp.s
 .PHONY : EmployeeManager.cpp.s
 
+VirtualDestructor.obj: VirtualDestructor.cpp.obj
+.PHONY : VirtualDestructor.obj
+
+# target to build an object file
+VirtualDestructor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap08.dir\build.make CMakeFiles/Chap08.dir/VirtualDestructor.cpp.obj
+.PHONY : VirtualDestructor.cpp.obj
+
+VirtualDestructor.i: VirtualDestructor.cpp.i
+.PHONY : VirtualDestructor.i
+
+# target to preprocess a source file
+VirtualDestructor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap08.dir\build.make CMakeFiles/Chap08.dir/VirtualDestructor.cpp.i
+.PHONY : VirtualDestructor.cpp.i
+
+VirtualDestructor.s: VirtualDestructor.cpp.s
+.PHONY : VirtualDestructor.s
+
+# target to generate assembly for a file
+VirtualDestructor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap08.dir\build.make CMakeFiles/Chap08.dir/VirtualDestructor.cpp.s
+.PHONY : VirtualDestructor.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... EmployeeManager.obj
 	@echo ... EmployeeManager.i
 	@echo ... EmployeeManager.s
+	@echo ... VirtualDestructor.obj
+	@echo ... VirtualDestructor.i
+	@echo ... VirtualDestructor.s
 .PHONY : help
 
 
