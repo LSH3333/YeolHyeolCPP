@@ -1,6 +1,6 @@
 /*
- * Account Å¬·¡½º Á¤ÀÇ, °´Ã¼ Æ÷ÀÎÅÍ ¹è¿­ Àû¿ë
- * »ı¼ºÀÚ, ¼Ò¸êÀÚ Ãß°¡
+ * Account í´ë˜ìŠ¤ ì •ì˜, ê°ì²´ í¬ì¸í„° ë°°ì—´ ì ìš©
+ * ìƒì„±ì, ì†Œë©¸ì ì¶”ê°€
  */
 
 #include <iostream>
@@ -39,9 +39,9 @@ public:
 
     void ShowAccInfo()
     {
-        cout << "°èÁÂID: " << accID << endl;
-        cout << "ÀÌ ¸§: " << cusName << endl;
-        cout << "ÀÜ ¾×: " << balance << endl << endl;
+        cout << "ê³„ì¢ŒID: " << accID << endl;
+        cout << "ì´ ë¦„: " << cusName << endl;
+        cout << "ì” ì•¡: " << balance << endl << endl;
     }
 
     void DepositMoney(int amount)
@@ -65,7 +65,7 @@ public:
     }
 };
 
-// µ¿ÀûÀ¸·Î ÇÒ´ç
+// ë™ì ìœ¼ë¡œ í• ë‹¹
 Account * accounts[100];
 int accNum = 0;
 
@@ -85,7 +85,7 @@ int main()
             case INQUIRE:
                 PrintAllAccountsInfo(); break;
             case EXIT:
-                // ÇÒ´ç ÇØÁ¦
+                // í• ë‹¹ í•´ì œ
                 for(int i = 0; i < accNum; i++)
                     delete accounts[i];
                 return 0;
@@ -97,12 +97,12 @@ int main()
 int PrintMenu()
 {
     cout << "----- MENU -----" << endl;
-    cout << "1. °èÁÂ°³¼³" << endl;
-    cout << "2. ÀÔ ±İ" << endl;
-    cout << "3. Ãâ ±İ" << endl;
-    cout << "4. °èÁÂÁ¤º¸ ÀüÃ¼ Ãâ·Â" << endl;
-    cout << "5. ÇÁ·Î±×·¥ Á¾·á" << endl;
-    cout << "¼±ÅÃ: ";
+    cout << "1. ê³„ì¢Œê°œì„¤" << endl;
+    cout << "2. ì… ê¸ˆ" << endl;
+    cout << "3. ì¶œ ê¸ˆ" << endl;
+    cout << "4. ê³„ì¢Œì •ë³´ ì „ì²´ ì¶œë ¥" << endl;
+    cout << "5. í”„ë¡œê·¸ë¨ ì¢…ë£Œ" << endl;
+    cout << "ì„ íƒ: ";
     int chose; cin >> chose;
     cout << endl;
     return chose;
@@ -113,22 +113,22 @@ void MakeAccount()
     int accID, balance;
     char cusName[NAME_LEN];
 
-    cout << "[°èÁÂ°³¼³]\n";
-    cout << "°èÁÂID: "; cin >> accID;
-    cout << "ÀÌ ¸§: "; cin >> cusName;
-    cout << "ÀÔ±İ¾×: "; cin >> balance;
+    cout << "[ê³„ì¢Œê°œì„¤]\n";
+    cout << "ê³„ì¢ŒID: "; cin >> accID;
+    cout << "ì´ ë¦„: "; cin >> cusName;
+    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
 
-    // µ¿ÀûÀ¸·Î °´Ã¼ »ı¼º
+    // ë™ì ìœ¼ë¡œ ê°ì²´ ìƒì„±
     accounts[accNum++] = new Account(accID, balance, cusName);
 }
 
 void Deposit()
 {
     int accID, balance;
-    cout << "[ÀÔ   ±İ]" << endl;
-    cout << "°èÁÂID: "; cin >> accID;
-    cout << "ÀÔ±İ¾×: "; cin >> balance;
-    cout << "ÀÔ±İ¿Ï·á" << endl;
+    cout << "[ì…   ê¸ˆ]" << endl;
+    cout << "ê³„ì¢ŒID: "; cin >> accID;
+    cout << "ì…ê¸ˆì•¡: "; cin >> balance;
+    cout << "ì…ê¸ˆì™„ë£Œ" << endl;
 
     for(int i = 0; i < accNum; i++)
     {
@@ -138,28 +138,28 @@ void Deposit()
             return;
         }
     }
-    cout << "Á¸ÀçÇÏÁö ¾Ê´Â °èÁÂID ÀÔ´Ï´Ù " << endl;
+    cout << "ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ê³„ì¢ŒID ì…ë‹ˆë‹¤ " << endl;
 }
 
 void WithDraw()
 {
     int accID, balance;
-    cout << "[Ãâ   ±İ]" << endl;
-    cout << "°èÁÂID: "; cin >> accID;
-    cout << "Ãâ±İ¾×: "; cin >> balance;
-    cout << "Ãâ±İ¿Ï·á" << endl;
+    cout << "[ì¶œ   ê¸ˆ]" << endl;
+    cout << "ê³„ì¢ŒID: "; cin >> accID;
+    cout << "ì¶œê¸ˆì•¡: "; cin >> balance;
+    cout << "ì¶œê¸ˆì™„ë£Œ" << endl;
 
     for(int i = 0; i < accNum; i++)
     {
         if(accounts[i]->Get_accID() == accID)
         {
             if(accounts[i]->WithDrawMoney(balance) == -1)
-                cout << "ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù" << endl;
-            else cout << "Ãâ±İ ¿Ï·á" << endl;
+                cout << "ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤" << endl;
+            else cout << "ì¶œê¸ˆ ì™„ë£Œ" << endl;
             return;
         }
     }
-    cout << "Á¸ÀçÇÏÁö ¾Ê´Â °èÁÂID ÀÔ´Ï´Ù " << endl;
+    cout << "ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ê³„ì¢ŒID ì…ë‹ˆë‹¤ " << endl;
 }
 
 void PrintAllAccountsInfo()
