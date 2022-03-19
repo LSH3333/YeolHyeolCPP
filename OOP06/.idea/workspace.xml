@@ -12,25 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bae56d11-125a-4394-8295-52610f48a4a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/OOP06.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/CMakeFiles/Chap08_1.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/CMakeFiles/Chap08_1.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/CMakeFiles/Chap08_1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/CMakeFiles/Chap08_1.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/Chap08_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/Chap08_1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08-1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08-1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08-1/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Chap08.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Chap08.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Chap08.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Chap08/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOP05/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP05/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647691050179</updated>
-      <workItem from="1647691051944" duration="2854000" />
+      <workItem from="1647691051944" duration="3505000" />
     </task>
     <servers />
   </component>
