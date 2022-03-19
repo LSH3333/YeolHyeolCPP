@@ -2,6 +2,12 @@
 #include <cstring>
 using namespace std;
 
+namespace RISK_LEVEL
+{
+    enum {RISK_A, RISK_B, RISK_C};
+}
+
+// 순수 가상함수를 지닌 불완전한 클래스 = 추상 클래스 = 객체 생성이 불가능한 클래스
 class Employee
 {
 private:
@@ -18,8 +24,9 @@ public:
         cout << "name: " << name << endl;
     }
     // 자료형 기반이 아닌 하위 클래스를 가르키는 객체의 함수가 호출 되도록 가상함수화
-    virtual int GetPay() const { return 0; }
-    virtual void ShowSalaryInfo() const {}
+    // = 0 으로 표현해 순수 가상함수화
+    virtual int GetPay() const = 0;
+    virtual void ShowSalaryInfo() const = 0;
 };
 
 // 정규직
@@ -29,7 +36,7 @@ private:
     int salary;
 public:
     PermanentWorker(string name, int money)
-    : Employee(name), salary(money) {}
+            : Employee(name), salary(money) {}
 
     virtual int GetPay() const
     {
@@ -50,7 +57,7 @@ private:
     int payPerHour;
 public:
     TemporaryWorker(string name, int pay)
-    : Employee(name), workTime(0), payPerHour(pay) {}
+            : Employee(name), workTime(0), payPerHour(pay) {}
 
     void AddWorkTime(int time) { workTime += time; }
     virtual int GetPay() const { return workTime * payPerHour; }
@@ -69,7 +76,7 @@ private:
     double bonusRatio;
 public:
     SalesWorker(string name, int money, double ratio)
-    : PermanentWorker(name, money), salesResult(0), bonusRatio(ratio) {}
+            : PermanentWorker(name, money), salesResult(0), bonusRatio(ratio) {}
 
     // function overriding
     void AddSalesResult(int value) { salesResult += value; }
@@ -85,6 +92,36 @@ public:
         cout << "salary: " << GetPay() << endl << endl;
     }
 
+};
+
+class ForeignSalesWorker : public SalesWorker
+{
+private:
+    const int riskLevel;
+public:
+    ForeignSalesWorker(string name, int money, double ratio, int risk)
+    : SalesWorker(name, money, ratio), riskLevel(risk) {}
+
+    virtual int GetPay() const
+    {
+        int SalesWorkerPay = SalesWorker::GetPay();
+        switch(riskLevel)
+        {
+            case RISK_LEVEL::RISK_A:
+                return SalesWorkerPay + (int)(SalesWorkerPay * 0.1);
+            case RISK_LEVEL::RISK_B:
+                return SalesWorkerPay + (int)(SalesWorkerPay * 0.2);
+            case RISK_LEVEL::RISK_C:
+                return SalesWorkerPay + (int)(SalesWorkerPay * 0.3);
+            default:
+                return 0;
+        }
+    }
+    virtual void ShowSalaryInfo() const
+    {
+        ShowYourName();
+        cout << "salary: " << GetPay() << endl << endl;
+    }
 };
 
 // control class
@@ -124,29 +161,23 @@ public:
 
 };
 
+
+
 int main()
 {
     EmployeeHandler handler;
 
-    // 정규직 등록
-    handler.AddEmployee(new PermanentWorker("KIM", 1000));
-    handler.AddEmployee(new PermanentWorker("LEE", 1500));
+    ForeignSalesWorker * fseller1 = new ForeignSalesWorker("HONG", 1000, 0.1, RISK_LEVEL::RISK_A);
+    fseller1->AddSalesResult(7000);
+    handler.AddEmployee(fseller1);
 
-    // 임시직 등록
-    TemporaryWorker * alba = new TemporaryWorker("JUNG", 700);
-    alba->AddWorkTime(5);
-//    handler.AddEmployee(new TemporaryWorker("JUNG", 700));
-    handler.AddEmployee(alba);
+    ForeignSalesWorker * fseller2 = new ForeignSalesWorker("YOON", 1000, 0.1, RISK_LEVEL::RISK_B);
+    fseller2->AddSalesResult(7000);
+    handler.AddEmployee(fseller2);
 
-    // 영업직 등록
-    SalesWorker * seller = new SalesWorker("HONG", 1000, 0.1);
-    seller->AddSalesResult(7000);
-    handler.AddEmployee(seller);
+    ForeignSalesWorker * fseller3 = new ForeignSalesWorker("LEE", 1000, 0.1, RISK_LEVEL::RISK_C);
+    fseller3->AddSalesResult(7000);
+    handler.AddEmployee(fseller3);
 
-    // 이번 달에 지불해야 할 급여의 정보
     handler.ShowAllSalaryInfo();
-
-    // 이번 달에 지불해야 할 금액의 총합
-    handler.ShowTotalSalary();
-
 }

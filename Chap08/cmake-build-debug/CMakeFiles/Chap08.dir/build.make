@@ -65,27 +65,27 @@ include CMakeFiles/Chap08.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Chap08.dir/flags.make
 
-CMakeFiles/Chap08.dir/main.cpp.obj: CMakeFiles/Chap08.dir/flags.make
-CMakeFiles/Chap08.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Works\YeolHyeolCPP\Chap08\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chap08.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Chap08.dir\main.cpp.obj -c D:\Works\YeolHyeolCPP\Chap08\main.cpp
+CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj: CMakeFiles/Chap08.dir/flags.make
+CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj: ../EmployeeManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Works\YeolHyeolCPP\Chap08\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Chap08.dir\EmployeeManager.cpp.obj -c D:\Works\YeolHyeolCPP\Chap08\EmployeeManager.cpp
 
-CMakeFiles/Chap08.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chap08.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Works\YeolHyeolCPP\Chap08\main.cpp > CMakeFiles\Chap08.dir\main.cpp.i
+CMakeFiles/Chap08.dir/EmployeeManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chap08.dir/EmployeeManager.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Works\YeolHyeolCPP\Chap08\EmployeeManager.cpp > CMakeFiles\Chap08.dir\EmployeeManager.cpp.i
 
-CMakeFiles/Chap08.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap08.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap08\main.cpp -o CMakeFiles\Chap08.dir\main.cpp.s
+CMakeFiles/Chap08.dir/EmployeeManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap08.dir/EmployeeManager.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap08\EmployeeManager.cpp -o CMakeFiles\Chap08.dir\EmployeeManager.cpp.s
 
 # Object files for target Chap08
 Chap08_OBJECTS = \
-"CMakeFiles/Chap08.dir/main.cpp.obj"
+"CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj"
 
 # External object files for target Chap08
 Chap08_EXTERNAL_OBJECTS =
 
-Chap08.exe: CMakeFiles/Chap08.dir/main.cpp.obj
+Chap08.exe: CMakeFiles/Chap08.dir/EmployeeManager.cpp.obj
 Chap08.exe: CMakeFiles/Chap08.dir/build.make
 Chap08.exe: CMakeFiles/Chap08.dir/linklibs.rsp
 Chap08.exe: CMakeFiles/Chap08.dir/objects1.rsp
