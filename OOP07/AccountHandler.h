@@ -2,8 +2,6 @@
 #define __ACCOUNT_HANDLER__
 
 #include "Account.h"
-#include "NormalAccount.h"
-#include "HighCreditAccount.h"
 
 class AccountHandler
 {

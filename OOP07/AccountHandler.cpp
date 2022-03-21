@@ -1,4 +1,7 @@
 #include "AccountHandler.h"
+#include "BankingCommon.h"
+#include "NormalAccount.h"
+#include "HighCreditAccount.h"
 
 AccountHandler::AccountHandler() : accNum(0) {}
 
