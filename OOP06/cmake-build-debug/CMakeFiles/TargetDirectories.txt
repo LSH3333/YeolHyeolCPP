@@ -1,3 +1,3 @@
-D:/Works/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/OOP06.dir
-D:/Works/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Works/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lsh/Git/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lsh/Git/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lsh/Git/YeolHyeolCPP/OOP06/cmake-build-debug/CMakeFiles/OOP06.dir

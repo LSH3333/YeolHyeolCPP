@@ -1,3 +1,1 @@
-"D:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\OOP06.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\OOP06.dir/objects.a @CMakeFiles\OOP06.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\OOP06.dir/objects.a -Wl,--no-whole-archive -o OOP06.exe -Wl,--out-implib,libOOP06.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OOP06.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/OOP06.dir/main.cpp.o -o OOP06 
