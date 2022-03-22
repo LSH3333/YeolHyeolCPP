@@ -88,6 +88,9 @@
 		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PointClass.cpp">
 			<Option target="Chap10"/>
 		</Unit>
+		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PointConsoleOutput.cpp">
+			<Option target="Chap10"/>
+		</Unit>
 		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp">
 			<Option target="Chap10"/>
 		</Unit>

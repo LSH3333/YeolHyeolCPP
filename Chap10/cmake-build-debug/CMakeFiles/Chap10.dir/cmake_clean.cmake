@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj"
   "CMakeFiles/Chap10.dir/PointClass.cpp.obj"
+  "CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.obj"
   "CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj"
   "Chap10.exe"
   "Chap10.exe.manifest"

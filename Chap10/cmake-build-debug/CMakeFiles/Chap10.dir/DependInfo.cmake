@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Works/YeolHyeolCPP/Chap10/ConsoleOutput.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj"
   "D:/Works/YeolHyeolCPP/Chap10/PointClass.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/PointClass.cpp.obj"
+  "D:/Works/YeolHyeolCPP/Chap10/PointConsoleOutput.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.obj"
   "D:/Works/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

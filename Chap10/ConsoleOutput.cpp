@@ -42,13 +42,13 @@ namespace mystd
     ostream cout; // cout은 객체의 이름이다
 }
 
-int main()
-{
-    using mystd::cout;
-    using mystd::endl;
-
-    cout << "Simple String";
-    cout << endl; // cout.operator(endl)
-    cout << 3.14 << endl << 123 << endl;
-
-}
+//int main()
+//{
+//    using mystd::cout;
+//    using mystd::endl;
+//
+//    cout << "Simple String";
+//    cout << endl; // cout.operator(endl)
+//    cout << 3.14 << endl << 123 << endl;
+//
+//}

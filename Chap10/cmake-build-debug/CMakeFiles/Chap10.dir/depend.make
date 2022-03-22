@@ -5,5 +5,7 @@ CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj: \
  ../ConsoleOutput.cpp
 CMakeFiles/Chap10.dir/PointClass.cpp.obj: \
  ../PointClass.cpp
+CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.obj: \
+ ../PointConsoleOutput.cpp
 CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj: \
  ../PostOpndOverloading.cpp

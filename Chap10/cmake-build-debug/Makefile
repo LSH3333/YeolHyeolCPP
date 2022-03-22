@@ -176,6 +176,30 @@ PointClass.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointClass.cpp.s
 .PHONY : PointClass.cpp.s
 
+PointConsoleOutput.obj: PointConsoleOutput.cpp.obj
+.PHONY : PointConsoleOutput.obj
+
+# target to build an object file
+PointConsoleOutput.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.obj
+.PHONY : PointConsoleOutput.cpp.obj
+
+PointConsoleOutput.i: PointConsoleOutput.cpp.i
+.PHONY : PointConsoleOutput.i
+
+# target to preprocess a source file
+PointConsoleOutput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.i
+.PHONY : PointConsoleOutput.cpp.i
+
+PointConsoleOutput.s: PointConsoleOutput.cpp.s
+.PHONY : PointConsoleOutput.s
+
+# target to generate assembly for a file
+PointConsoleOutput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.s
+.PHONY : PointConsoleOutput.cpp.s
+
 PostOpndOverloading.obj: PostOpndOverloading.cpp.obj
 .PHONY : PostOpndOverloading.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... PointClass.obj
 	@echo ... PointClass.i
 	@echo ... PointClass.s
+	@echo ... PointConsoleOutput.obj
+	@echo ... PointConsoleOutput.i
+	@echo ... PointConsoleOutput.s
 	@echo ... PostOpndOverloading.obj
 	@echo ... PostOpndOverloading.i
 	@echo ... PostOpndOverloading.s
