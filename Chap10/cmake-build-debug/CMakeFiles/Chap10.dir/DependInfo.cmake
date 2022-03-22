@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Works/YeolHyeolCPP/Chap10/ConsoleOutput.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj"
+  "D:/Works/YeolHyeolCPP/Chap10/PointClass.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/PointClass.cpp.obj"
   "D:/Works/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj"
-  "D:/Works/YeolHyeolCPP/Chap10/main.cpp" "D:/Works/YeolHyeolCPP/Chap10/cmake-build-debug/CMakeFiles/Chap10.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

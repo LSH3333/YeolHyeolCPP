@@ -65,18 +65,18 @@ include CMakeFiles/Chap10.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Chap10.dir/flags.make
 
-CMakeFiles/Chap10.dir/main.cpp.obj: CMakeFiles/Chap10.dir/flags.make
-CMakeFiles/Chap10.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Works\YeolHyeolCPP\Chap10\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chap10.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Chap10.dir\main.cpp.obj -c D:\Works\YeolHyeolCPP\Chap10\main.cpp
+CMakeFiles/Chap10.dir/PointClass.cpp.obj: CMakeFiles/Chap10.dir/flags.make
+CMakeFiles/Chap10.dir/PointClass.cpp.obj: ../PointClass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Works\YeolHyeolCPP\Chap10\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chap10.dir/PointClass.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Chap10.dir\PointClass.cpp.obj -c D:\Works\YeolHyeolCPP\Chap10\PointClass.cpp
 
-CMakeFiles/Chap10.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chap10.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Works\YeolHyeolCPP\Chap10\main.cpp > CMakeFiles\Chap10.dir\main.cpp.i
+CMakeFiles/Chap10.dir/PointClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chap10.dir/PointClass.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Works\YeolHyeolCPP\Chap10\PointClass.cpp > CMakeFiles\Chap10.dir\PointClass.cpp.i
 
-CMakeFiles/Chap10.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap10.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap10\main.cpp -o CMakeFiles\Chap10.dir\main.cpp.s
+CMakeFiles/Chap10.dir/PointClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap10.dir/PointClass.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap10\PointClass.cpp -o CMakeFiles\Chap10.dir\PointClass.cpp.s
 
 CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj: CMakeFiles/Chap10.dir/flags.make
 CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj: ../PostOpndOverloading.cpp
@@ -91,21 +91,36 @@ CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap10\PostOpndOverloading.cpp -o CMakeFiles\Chap10.dir\PostOpndOverloading.cpp.s
 
+CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj: CMakeFiles/Chap10.dir/flags.make
+CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj: ../ConsoleOutput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Works\YeolHyeolCPP\Chap10\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Chap10.dir\ConsoleOutput.cpp.obj -c D:\Works\YeolHyeolCPP\Chap10\ConsoleOutput.cpp
+
+CMakeFiles/Chap10.dir/ConsoleOutput.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chap10.dir/ConsoleOutput.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Works\YeolHyeolCPP\Chap10\ConsoleOutput.cpp > CMakeFiles\Chap10.dir\ConsoleOutput.cpp.i
+
+CMakeFiles/Chap10.dir/ConsoleOutput.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chap10.dir/ConsoleOutput.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Works\YeolHyeolCPP\Chap10\ConsoleOutput.cpp -o CMakeFiles\Chap10.dir\ConsoleOutput.cpp.s
+
 # Object files for target Chap10
 Chap10_OBJECTS = \
-"CMakeFiles/Chap10.dir/main.cpp.obj" \
-"CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj"
+"CMakeFiles/Chap10.dir/PointClass.cpp.obj" \
+"CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj" \
+"CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj"
 
 # External object files for target Chap10
 Chap10_EXTERNAL_OBJECTS =
 
-Chap10.exe: CMakeFiles/Chap10.dir/main.cpp.obj
+Chap10.exe: CMakeFiles/Chap10.dir/PointClass.cpp.obj
 Chap10.exe: CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.obj
+Chap10.exe: CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj
 Chap10.exe: CMakeFiles/Chap10.dir/build.make
 Chap10.exe: CMakeFiles/Chap10.dir/linklibs.rsp
 Chap10.exe: CMakeFiles/Chap10.dir/objects1.rsp
 Chap10.exe: CMakeFiles/Chap10.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Works\YeolHyeolCPP\Chap10\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Chap10.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Works\YeolHyeolCPP\Chap10\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Chap10.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Chap10.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

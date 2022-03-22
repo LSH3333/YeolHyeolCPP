@@ -21,9 +21,9 @@ Point operator~ (const Point &ref)
     return pos;
 }
 
-int main()
-{
-    Point pos1(1,3);
-    Point pos2 = ~pos1;
-    pos2.ShowPosition();
-}
+//int main()
+//{
+//    Point pos1(1,3);
+//    Point pos2 = ~pos1;
+//    pos2.ShowPosition();
+//}

@@ -82,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp">
+		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/ConsoleOutput.cpp">
 			<Option target="Chap10"/>
 		</Unit>
-		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/main.cpp">
+		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PointClass.cpp">
+			<Option target="Chap10"/>
+		</Unit>
+		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp">
 			<Option target="Chap10"/>
 		</Unit>
 		<Unit filename="D:/Works/YeolHyeolCPP/Chap10/CMakeLists.txt">

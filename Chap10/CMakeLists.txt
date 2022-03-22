@@ -3,4 +3,4 @@ project(Chap10)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Chap10 main.cpp PostOpndOverloading.cpp)
+add_executable(Chap10 PointClass.cpp PostOpndOverloading.cpp ConsoleOutput.cpp)

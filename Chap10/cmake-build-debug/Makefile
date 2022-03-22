@@ -128,6 +128,54 @@ Chap10/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/build
 .PHONY : Chap10/fast
 
+ConsoleOutput.obj: ConsoleOutput.cpp.obj
+.PHONY : ConsoleOutput.obj
+
+# target to build an object file
+ConsoleOutput.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/ConsoleOutput.cpp.obj
+.PHONY : ConsoleOutput.cpp.obj
+
+ConsoleOutput.i: ConsoleOutput.cpp.i
+.PHONY : ConsoleOutput.i
+
+# target to preprocess a source file
+ConsoleOutput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/ConsoleOutput.cpp.i
+.PHONY : ConsoleOutput.cpp.i
+
+ConsoleOutput.s: ConsoleOutput.cpp.s
+.PHONY : ConsoleOutput.s
+
+# target to generate assembly for a file
+ConsoleOutput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/ConsoleOutput.cpp.s
+.PHONY : ConsoleOutput.cpp.s
+
+PointClass.obj: PointClass.cpp.obj
+.PHONY : PointClass.obj
+
+# target to build an object file
+PointClass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointClass.cpp.obj
+.PHONY : PointClass.cpp.obj
+
+PointClass.i: PointClass.cpp.i
+.PHONY : PointClass.i
+
+# target to preprocess a source file
+PointClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointClass.cpp.i
+.PHONY : PointClass.cpp.i
+
+PointClass.s: PointClass.cpp.s
+.PHONY : PointClass.s
+
+# target to generate assembly for a file
+PointClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PointClass.cpp.s
+.PHONY : PointClass.cpp.s
+
 PostOpndOverloading.obj: PostOpndOverloading.cpp.obj
 .PHONY : PostOpndOverloading.obj
 
@@ -152,30 +200,6 @@ PostOpndOverloading.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.s
 .PHONY : PostOpndOverloading.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Chap10.dir\build.make CMakeFiles/Chap10.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Chap10
+	@echo ... ConsoleOutput.obj
+	@echo ... ConsoleOutput.i
+	@echo ... ConsoleOutput.s
+	@echo ... PointClass.obj
+	@echo ... PointClass.i
+	@echo ... PointClass.s
 	@echo ... PostOpndOverloading.obj
 	@echo ... PostOpndOverloading.i
 	@echo ... PostOpndOverloading.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 .PHONY : help
 
 
