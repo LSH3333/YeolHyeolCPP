@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Chap11.exe"
+			"path" : "Chap11_2.exe"
 		},
 		{
-			"path" : "Chap11.pdb"
+			"path" : "Chap11_2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "Chap11::@6890427a1f51a3e7e1df",
+	"id" : "Chap11_2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Chap11",
-	"nameOnDisk" : "Chap11.exe",
+	"name" : "Chap11_2",
+	"nameOnDisk" : "Chap11_2.exe",
 	"paths" : 
 	{
 		"build" : ".",
