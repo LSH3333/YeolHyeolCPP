@@ -524,6 +524,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "D:/Program Files/JetBrains/CLion 2021.2.2/bin/cmake/win/share/cmake-3.21/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Program Files/JetBrains/CLion 2021.2.2/bin/cmake/win/share/cmake-3.21/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Program Files/JetBrains/CLion 2021.2.2/bin/cmake/win/share/cmake-3.21/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "D:/Program Files/JetBrains/CLion 2021.2.2/bin/cmake/win/share/cmake-3.21/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -757,8 +772,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "D:/Works/YeolHyeolCPP/Chap11-1/cmake-build-debug",
-		"source" : "D:/Works/YeolHyeolCPP/Chap11-1"
+		"build" : "D:/Works/YeolHyeolCPP/Chap07-2-2/cmake-build-debug",
+		"source" : "D:/Works/YeolHyeolCPP/Chap07-2-2"
 	},
 	"version" : 
 	{
