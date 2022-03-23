@@ -2,6 +2,7 @@
 #include <cstdlib>
 using namespace std;
 
+
 class Point
 {
 private:
@@ -9,15 +10,21 @@ private:
 public:
     Point(int x = 0, int y = 0) : xpos(x), ypos(y) {}
     friend ostream& operator<< (ostream& os, const Point& pos);
+    friend ostream& operator<< (ostream &os, const Point* pos);
 };
 
+// Point&를 받아서 좌표 출력
 ostream& operator<< (ostream& os, const Point& pos)
 {
     os << '[' << pos.xpos << ", " << pos.ypos << ']' << endl;
     return os;
 }
-
-//ostream& operator<< (ostream& os, )
+// Point* 받아서 포인터 타고가서 좌표 출력
+ostream& operator<< (ostream &os, const Point* pos)
+{
+    os << '[' << pos->xpos << ", " << pos->ypos << ']' << endl;
+    return os;
+}
 
 typedef Point * POINT_PTR;
 
@@ -56,17 +63,24 @@ public:
     ~BoundCheckPointPtrArray() {delete []arr; }
 };
 
-int main()
-{
-    BoundCheckPointPtrArray arr(3);
-    arr[0] = new Point(3,4);
-    arr[1] = new Point(5,6);
-    arr[2] = new Point(7,8);
-
-    for(int i = 0; i < arr.GetArrLen(); i++)
-        cout << arr[i];
-
-    delete arr[0];
-    delete arr[1];
-    delete arr[2];
-}
+//
+//
+//int main()
+//{
+//    BoundCheckPointPtrArray arr(3);
+//    arr[0] = new Point(3,4);
+//    arr[1] = new Point(5,6);
+//    arr[2] = new Point(7,8);
+//
+//    for(int i = 0; i < arr.GetArrLen(); i++)
+//        cout << *(arr[i]);
+//    cout << endl;
+//
+//    for(int i = 0; i < arr.GetArrLen(); i++)
+//        cout << arr[i];
+//    cout << endl;
+//
+//    delete arr[0];
+//    delete arr[1];
+//    delete arr[2];
+//}

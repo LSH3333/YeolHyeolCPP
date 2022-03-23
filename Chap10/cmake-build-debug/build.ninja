@@ -72,8 +72,32 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Chap10: phony || CMakeFiles/Chap10.dir
 
-build CMakeFiles/Chap10.dir/main.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Git/YeolHyeolCPP/Chap10/main.cpp || cmake_object_order_depends_target_Chap10
-  DEP_FILE = CMakeFiles/Chap10.dir/main.cpp.o.d
+build CMakeFiles/Chap10.dir/PointClass.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Git/YeolHyeolCPP/Chap10/PointClass.cpp || cmake_object_order_depends_target_Chap10
+  DEP_FILE = CMakeFiles/Chap10.dir/PointClass.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Chap10.dir
+  OBJECT_FILE_DIR = CMakeFiles/Chap10.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Chap10.dir/
+  TARGET_PDB = Chap10.pdb
+
+build CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Git/YeolHyeolCPP/Chap10/PostOpndOverloading.cpp || cmake_object_order_depends_target_Chap10
+  DEP_FILE = CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Chap10.dir
+  OBJECT_FILE_DIR = CMakeFiles/Chap10.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Chap10.dir/
+  TARGET_PDB = Chap10.pdb
+
+build CMakeFiles/Chap10.dir/ConsoleOutput.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Git/YeolHyeolCPP/Chap10/ConsoleOutput.cpp || cmake_object_order_depends_target_Chap10
+  DEP_FILE = CMakeFiles/Chap10.dir/ConsoleOutput.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Chap10.dir
+  OBJECT_FILE_DIR = CMakeFiles/Chap10.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Chap10.dir/
+  TARGET_PDB = Chap10.pdb
+
+build CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Git/YeolHyeolCPP/Chap10/PointConsoleOutput.cpp || cmake_object_order_depends_target_Chap10
+  DEP_FILE = CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/Chap10.dir
   OBJECT_FILE_DIR = CMakeFiles/Chap10.dir
@@ -88,7 +112,7 @@ build CMakeFiles/Chap10.dir/main.cpp.o: CXX_COMPILER__Chap10_Debug /Users/lsh/Gi
 #############################################
 # Link the executable Chap10
 
-build Chap10: CXX_EXECUTABLE_LINKER__Chap10_Debug CMakeFiles/Chap10.dir/main.cpp.o
+build Chap10: CXX_EXECUTABLE_LINKER__Chap10_Debug CMakeFiles/Chap10.dir/PointClass.cpp.o CMakeFiles/Chap10.dir/PostOpndOverloading.cpp.o CMakeFiles/Chap10.dir/ConsoleOutput.cpp.o CMakeFiles/Chap10.dir/PointConsoleOutput.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   OBJECT_DIR = CMakeFiles/Chap10.dir
   POST_BUILD = :

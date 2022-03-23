@@ -72,8 +72,8 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_OOP07: phony || CMakeFiles/OOP07.dir
 
-build CMakeFiles/OOP07.dir/main.cpp.o: CXX_COMPILER__OOP07_Debug /Users/lsh/Git/YeolHyeolCPP/OOP07/main.cpp || cmake_object_order_depends_target_OOP07
-  DEP_FILE = CMakeFiles/OOP07.dir/main.cpp.o.d
+build CMakeFiles/OOP07.dir/BankingSystemMain.cpp.o: CXX_COMPILER__OOP07_Debug /Users/lsh/Git/YeolHyeolCPP/OOP07/BankingSystemMain.cpp || cmake_object_order_depends_target_OOP07
+  DEP_FILE = CMakeFiles/OOP07.dir/BankingSystemMain.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/OOP07.dir
   OBJECT_FILE_DIR = CMakeFiles/OOP07.dir
@@ -98,7 +98,7 @@ build CMakeFiles/OOP07.dir/AccountHandler.cpp.o: CXX_COMPILER__OOP07_Debug /User
 #############################################
 # Link the executable OOP07
 
-build OOP07: CXX_EXECUTABLE_LINKER__OOP07_Debug CMakeFiles/OOP07.dir/main.cpp.o CMakeFiles/OOP07.dir/Account.cpp.o CMakeFiles/OOP07.dir/AccountHandler.cpp.o
+build OOP07: CXX_EXECUTABLE_LINKER__OOP07_Debug CMakeFiles/OOP07.dir/BankingSystemMain.cpp.o CMakeFiles/OOP07.dir/Account.cpp.o CMakeFiles/OOP07.dir/AccountHandler.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
   OBJECT_DIR = CMakeFiles/OOP07.dir
   POST_BUILD = :

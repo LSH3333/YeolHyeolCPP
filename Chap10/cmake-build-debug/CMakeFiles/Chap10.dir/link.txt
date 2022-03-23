@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Chap10.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\Chap10.dir/objects.a @CMakeFiles\Chap10.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Chap10.dir/objects.a -Wl,--no-whole-archive -o Chap10.exe -Wl,--out-implib,libChap10.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Chap10.dir\linklibs.rsp
