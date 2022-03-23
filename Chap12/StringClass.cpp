@@ -8,6 +8,10 @@ private:
     char * str;
 
 public:
+    String()
+    {
+        str = NULL;
+    }
     // 생성자
     String(const char *_str)
     {
@@ -83,7 +87,9 @@ ostream& operator<< (ostream& os, const String& ref)
 // >> 연산자 오버로딩
 istream& operator>> (istream& is, String& ref)
 {
-    is >> ref.str;
+    char str[100];
+    is >> str;
+    ref = String(str);
     return is;
 }
 
@@ -103,7 +109,7 @@ int main()
     else
         cout << "diff string" << endl;
 
-    string str4;
+    String str4;
     cout << "Enter String: ";
     cin >> str4;
     cout << "Your String: " << str4 << endl;
