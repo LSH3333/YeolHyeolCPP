@@ -112,3 +112,7 @@ AccountHandler::~AccountHandler()
 {
     for(int i = 0; i < accNum; i++) delete accounts[i];
 }
+
+
+
+}

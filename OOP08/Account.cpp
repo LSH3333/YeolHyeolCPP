@@ -1,3 +1,5 @@
+// Account 클래스 깊은 복사 진행하는 대입 연산자 오버로딩 추가
+
 #include "BankingCommon.h"
 #include "Account.h"
 
@@ -14,6 +16,17 @@ Account::Account(const Account &copy) : accID(copy.accID), balance(copy.balance)
     // 새롭게 동적 할당해서 깊은 복사 진행
     cusName = new char[strlen(copy.cusName) + 1];
     strcpy(cusName, copy.cusName);
+}
+
+// 깊은 복사 진행하는 대입 연산자 오버로딩
+Account& Account::operator= (const Account& ref)
+{
+    accID = ref.accID;
+    balance = ref.balance;
+    delete []cusName;
+    cusName = new char[strlen(ref.cusName) + 1];
+    strcpy(cusName, ref.cusName);
+    return *this;
 }
 
 int Account::Get_accID() const { return accID; }

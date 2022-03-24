@@ -33,7 +33,7 @@ class BoundCheckPointPtrArray
 private:
     POINT_PTR * arr; // double pointer
     int arrlen;
-    // 복사 생성자, 대입 연산자 오버라이딩 금지
+    // 복사 생성자, 대입 연산자 오버라이딩 호출 금지
     BoundCheckPointPtrArray(const BoundCheckPointPtrArray& arr) {}
     BoundCheckPointPtrArray& operator= (const BoundCheckPointPtrArray& arr) {}
 public:
@@ -63,24 +63,24 @@ public:
     ~BoundCheckPointPtrArray() {delete []arr; }
 };
 
-//
-//
-//int main()
-//{
-//    BoundCheckPointPtrArray arr(3);
-//    arr[0] = new Point(3,4);
-//    arr[1] = new Point(5,6);
-//    arr[2] = new Point(7,8);
-//
-//    for(int i = 0; i < arr.GetArrLen(); i++)
-//        cout << *(arr[i]);
-//    cout << endl;
-//
-//    for(int i = 0; i < arr.GetArrLen(); i++)
-//        cout << arr[i];
-//    cout << endl;
-//
-//    delete arr[0];
-//    delete arr[1];
-//    delete arr[2];
-//}
+
+
+int main()
+{
+    BoundCheckPointPtrArray arr(3);
+    arr[0] = new Point(3,4);
+    arr[1] = new Point(5,6);
+    arr[2] = new Point(7,8);
+
+    for(int i = 0; i < arr.GetArrLen(); i++)
+        cout << *(arr[i]);
+    cout << endl;
+
+    for(int i = 0; i < arr.GetArrLen(); i++)
+        cout << arr[i];
+    cout << endl;
+
+    delete arr[0];
+    delete arr[1];
+    delete arr[2];
+}
