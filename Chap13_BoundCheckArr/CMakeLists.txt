@@ -3,4 +3,4 @@ project(Chap13_BoundCheckArr)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Chap13_BoundCheckArr main.cpp)
+add_executable(Chap13_BoundCheckArr ArrayTemplate.h Point.cpp Point.h "BoundArrayMain .cpp")
