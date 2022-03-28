@@ -6,6 +6,7 @@
 #define __ACCOUNT_HANDLER__
 
 #include "Account.h"
+#include "ExceptionClass.h"
 #include "BoundCheckArray.h"
 
 class AccountHandler

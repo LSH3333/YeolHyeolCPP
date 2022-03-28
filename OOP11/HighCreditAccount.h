@@ -1,4 +1,6 @@
-
+/*
+ * 예외 추가
+ */
 #ifndef __HIGH_CREDIT_ACCOUNT_H__
 #define __HIGH_CREDIT_ACCOUNT_H__
 
@@ -14,6 +16,7 @@ public:
 
     virtual void DepositMoney(int amount)
     {
+        if(amount < 0) throw NotAllowedInputException(amount); //
         int additional_interest;
         switch(this->rating)
         {

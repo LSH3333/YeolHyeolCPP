@@ -1,7 +1,12 @@
+/*
+ * 입출금시 예외 처리
+ */
+
 #include "AccountHandler.h"
 #include "BankingCommon.h"
 #include "NormalAccount.h"
 #include "HighCreditAccount.h"
+
 
 AccountHandler::AccountHandler() : accNum(0) {}
 
@@ -67,18 +72,30 @@ void AccountHandler::Deposit()
     int accID, balance;
     cout << "[입   금]" << endl;
     cout << "계좌ID: "; cin >> accID;
-    cout << "입금액: "; cin >> balance;
-    cout << "입금완료" << endl;
 
-    for(int i = 0; i < accNum; i++)
+    while(true)
     {
-        if(accounts[i]->Get_accID() == accID)
+        try
         {
-            accounts[i]->DepositMoney(balance);
-            return;
+            cout << "입금액: "; cin >> balance;
+
+            for(int i = 0; i < accNum; i++)
+            {
+                if(accounts[i]->Get_accID() == accID)
+                {
+                    accounts[i]->DepositMoney(balance);
+                    cout << "입금완료" << endl;
+                    return;
+                }
+            }
+            cout << "존재하지 않는 계좌ID 입니다 " << endl;
+        }
+        catch (NotAllowedInputException &expn) // 0보다 작은 값 입력 시
+        {
+            expn.ShowExceptionInfo();
         }
     }
-    cout << "존재하지 않는 계좌ID 입니다 " << endl;
+
 }
 
 void AccountHandler::WithDraw()
@@ -86,20 +103,35 @@ void AccountHandler::WithDraw()
     int accID, balance;
     cout << "[출   금]" << endl;
     cout << "계좌ID: "; cin >> accID;
-    cout << "출금액: "; cin >> balance;
-    cout << "출금완료" << endl;
 
-    for(int i = 0; i < accNum; i++)
+    while(true)
     {
-        if(accounts[i]->Get_accID() == accID)
+        try
         {
-            if(accounts[i]->WithDrawMoney(balance) == -1)
-                cout << "잔액이 부족합니다" << endl;
-            else cout << "출금 완료" << endl;
-            return;
+            cout << "출금액: "; cin >> balance;
+
+            for(int i = 0; i < accNum; i++)
+            {
+                if(accounts[i]->Get_accID() == accID)
+                {
+                    if(accounts[i]->WithDrawMoney(balance) == -1)
+                        cout << "잔액이 부족합니다" << endl;
+                    else cout << "출금 완료" << endl;
+                    return;
+                }
+            }
+            cout << "존재하지 않는 계좌ID 입니다 " << endl;
+        }
+        catch (NotAllowedInputException &expn) // 0보다 작은 값 입력 시
+        {
+            expn.ShowExceptionInfo();
+        }
+        catch (NotEnoughBalanceException &expn) // 예금액 부족시
+        {
+            expn.ShowExceptionInfo();
         }
     }
-    cout << "존재하지 않는 계좌ID 입니다 " << endl;
+
 }
 
 void AccountHandler::PrintAllAccountsInfo()

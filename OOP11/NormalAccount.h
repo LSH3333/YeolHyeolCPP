@@ -1,3 +1,7 @@
+/*
+ * 예외 발생
+ */
+
 #ifndef __NORMAL_ACCOUNT_H__
 #define  __NORMAL_ACCOUNT_H__
 
@@ -13,6 +17,7 @@ public:
 
     virtual void DepositMoney(int amount)
     {
+        if(amount < 0) throw NotAllowedInputException(amount);
         Account::DepositMoney(amount + (int)(amount * (interest/100.0)));
     }
 };
