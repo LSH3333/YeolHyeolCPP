@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Chap16"
+			"path" : "Chap16.exe"
+		},
+		{
+			"path" : "Chap16.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -68,12 +71,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "Chap16",
-	"nameOnDisk" : "Chap16",
+	"nameOnDisk" : "Chap16.exe",
 	"paths" : 
 	{
 		"build" : ".",
