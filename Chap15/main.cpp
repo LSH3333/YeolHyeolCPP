@@ -1,21 +1,23 @@
 #include <iostream>
+#include <cmath>
+#include <cstring>
 using namespace std;
+
+// string to integer
+int StoI(char *str)
+{
+    int len = strlen(str);
+    int num = 0;
+    for(int i = 0; i < len; i++)
+    {
+        if(str[i] < '0' || str[i] > '9')
+            throw str[i];
+        num += (int)(pow((double)10, (len-1)-i) * (str[i]+(7-'7')));
+    }
+    return num;
+}
 
 int main()
 {
-    int num1, num2;
-    cout << "enter two numbers: ";
-    cin >> num1 >> num2;
-
-    try
-    {
-        if(num2 == 0) throw num2;
-        cout << "니눗셈의 몫: " << num1 / num2 << endl;
-        cout << "나눗셈의 나머지: " << num1 % num2 << endl;
-    }
-    catch(int expn)
-    {
-        cout << "제수는 " << expn << "이 될 수 없습니다" << endl;
-    }
-    cout << "end of main" << endl;
+    
 }
